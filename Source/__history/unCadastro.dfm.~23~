@@ -1,0 +1,187 @@
+object frmCadastroDeProdutos: TfrmCadastroDeProdutos
+  Left = 0
+  Top = 0
+  BorderIcons = []
+  BorderStyle = bsSingle
+  Caption = 'Cadastro de Produtos'
+  ClientHeight = 276
+  ClientWidth = 647
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poMainFormCenter
+  PixelsPerInch = 96
+  TextHeight = 13
+  object pnlRodape: TPanel
+    Left = 0
+    Top = 235
+    Width = 647
+    Height = 41
+    Align = alBottom
+    BevelOuter = bvNone
+    Color = clWhite
+    ParentBackground = False
+    TabOrder = 0
+    ExplicitLeft = 192
+    ExplicitTop = 136
+    ExplicitWidth = 185
+    object BitBtn1: TBitBtn
+      Left = 555
+      Top = 8
+      Width = 75
+      Height = 25
+      Caption = 'Sair'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clRed
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ModalResult = 8
+      ParentFont = False
+      TabOrder = 0
+      OnClick = BitBtn1Click
+    end
+    object BitBtn2: TBitBtn
+      Left = 283
+      Top = 8
+      Width = 75
+      Height = 25
+      Caption = 'Novo'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlue
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 1
+      OnClick = BitBtn2Click
+    end
+    object BitBtn3: TBitBtn
+      Left = 362
+      Top = 8
+      Width = 75
+      Height = 25
+      Caption = 'Alterar'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlue
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 2
+    end
+    object BitBtn4: TBitBtn
+      Left = 441
+      Top = 8
+      Width = 75
+      Height = 25
+      Caption = 'Excluir'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlue
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 3
+    end
+  end
+  object dbGridProdutos: TDBGrid
+    Left = 0
+    Top = 0
+    Width = 647
+    Height = 235
+    Align = alClient
+    BorderStyle = bsNone
+    DataSource = dsProdutos
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    Options = [dgTitles, dgColumnResize, dgRowLines, dgTabs, dgRowSelect, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit, dgTitleClick, dgTitleHotTrack]
+    ParentFont = False
+    TabOrder = 1
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clBlue
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = []
+    Columns = <
+      item
+        Expanded = False
+        FieldName = 'CODIGO'
+        Width = 104
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'DESCRICAO'
+        Width = 300
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'PRECO_CUSTO'
+        Width = 100
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'PRECO_VENDA'
+        Width = 120
+        Visible = True
+      end>
+  end
+  object zqryProdutos: TZQuery
+    Connection = DM.zConexao
+    SQL.Strings = (
+      'SELECT * FROM PRODUTOS')
+    Params = <>
+    Left = 416
+    Top = 64
+    object zqryProdutosCODIGO: TWideStringField
+      DisplayLabel = 'C'#243'digo'
+      FieldName = 'CODIGO'
+      Required = True
+      Size = 510
+    end
+    object zqryProdutosDESCRICAO: TWideStringField
+      DisplayLabel = 'Descri'#231#227'o'
+      FieldName = 'DESCRICAO'
+      Required = True
+      Size = 400
+    end
+    object zqryProdutosDATA_CADASTRO: TDateField
+      DisplayLabel = 'Dt. Cadastro'
+      FieldName = 'DATA_CADASTRO'
+      Required = True
+    end
+    object zqryProdutosESTOQUE_MINIMO: TFloatField
+      DisplayLabel = 'Est. M'#237'nimo'
+      FieldName = 'ESTOQUE_MINIMO'
+    end
+    object zqryProdutosESTOQUE_MAXIMO: TFloatField
+      DisplayLabel = 'Est. M'#225'ximo'
+      FieldName = 'ESTOQUE_MAXIMO'
+    end
+    object zqryProdutosPRECO_CUSTO: TFloatField
+      DisplayLabel = 'Custo R$'
+      FieldName = 'PRECO_CUSTO'
+      currency = True
+    end
+    object zqryProdutosPRECO_VENDA: TFloatField
+      DisplayLabel = 'Venda R$'
+      FieldName = 'PRECO_VENDA'
+      currency = True
+    end
+  end
+  object dsProdutos: TDataSource
+    DataSet = zqryProdutos
+    Left = 416
+    Top = 120
+  end
+end

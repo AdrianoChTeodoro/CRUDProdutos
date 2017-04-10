@@ -1,0 +1,24 @@
+object DM: TDM
+  OldCreateOrder = False
+  Height = 150
+  Width = 215
+  object zConexao: TZConnection
+    ControlsCodePage = cCP_UTF16
+    Catalog = ''
+    Connected = True
+    HostName = ''
+    Port = 0
+    Database = 'C:\Users\virtual\Desktop\Cadastro\EXE\BD\CAD.db'
+    User = ''
+    Password = ''
+    Protocol = 'sqlite-3'
+    LibraryLocation = 'C:\Users\virtual\Desktop\Cadastro\EXE\sqlite3.dll'
+    Left = 87
+    Top = 56
+  end
+  object ZQuery1: TZQuery
+    Params = <>
+    Left = 144
+    Top = 64
+  end
+end

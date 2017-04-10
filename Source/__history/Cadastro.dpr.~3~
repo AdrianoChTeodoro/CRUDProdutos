@@ -1,0 +1,16 @@
+program Cadastro;
+
+uses
+  Vcl.Forms,
+  unCadastro in 'unCadastro.pas' {frmCadastro},
+  unDM in 'unDM.pas' {DM: TDataModule};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TfrmCadastro, frmCadastro);
+  Application.CreateForm(TDM, DM);
+  Application.Run;
+end.

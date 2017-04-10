@@ -1,0 +1,10 @@
+CRUD (Simples)
+
+Desenvolvido em Delphi XE4;
+Banco de dados SQLite 3;
+Driver de conexão Zeos;
+
+Desenvolvido por:
+Adriano Chaves Teodoro.
+
+https://www.linkedin.com/in/adriano-chaves-teodoro-75839232/

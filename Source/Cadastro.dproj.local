@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2016/08/12 22:19:23.000.705,=C:\Users\virtual\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2017/01/15 22:44:38.000.382,=C:\Users\virtual\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2017/04/06 23:44:45.000.084,=C:\Users\virtual\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2017/04/06 23:45:10.000.915,C:\Users\virtual\Documents\RAD Studio\Projects\Unit1.dfm=C:\Users\virtual\Desktop\Cadastro\Source\unCadastro.dfm</Transaction>
+    <Transaction>2017/04/06 23:45:10.000.915,C:\Users\virtual\Documents\RAD Studio\Projects\Unit1.pas=C:\Users\virtual\Desktop\Cadastro\Source\unCadastro.pas</Transaction>
+    <Transaction>2017/04/06 23:45:17.000.939,C:\Users\virtual\Documents\RAD Studio\Projects\Project1.dproj=C:\Users\virtual\Desktop\Cadastro\Source\Cadastro.dproj</Transaction>
+    <Transaction>2017/04/07 00:24:06.000.377,=C:\Users\virtual\Desktop\Cadastro\Source\Unit1.pas</Transaction>
+    <Transaction>2017/04/07 00:24:20.000.945,C:\Users\virtual\Desktop\Cadastro\Source\Unit1.pas=C:\Users\virtual\Desktop\Cadastro\Source\unDM.pas</Transaction>
+    <Transaction>2017/04/07 00:24:20.000.945,C:\Users\virtual\Desktop\Cadastro\Source\Unit1.dfm=C:\Users\virtual\Desktop\Cadastro\Source\unDM.dfm</Transaction>
+    <Transaction>2017/04/09 22:57:23.236,=C:\Users\virtual\Desktop\Cadastro\Source\Unit1.pas</Transaction>
+    <Transaction>2017/04/09 22:59:04.683,C:\Users\virtual\Desktop\Cadastro\Source\unProduto.pas=C:\Users\virtual\Desktop\Cadastro\Source\Unit1.pas</Transaction>
+    <Transaction>2017/04/09 22:59:04.683,C:\Users\virtual\Desktop\Cadastro\Source\unProduto.dfm=C:\Users\virtual\Desktop\Cadastro\Source\Unit1.dfm</Transaction>
+  </Transactions>
+</BorlandProject>
